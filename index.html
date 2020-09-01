@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+<title>Price Split Calculator</title>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./static/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>    
+<h1 class='header_title'>Price Split Calculator</h1>
+<hr>
+</header>
+<table><tr><td>  
+<h3 class='input_title'>Add a person:</h3>
+<input type='text' placeholder='Name' class='text_field' id='person_name'>
+<button type="button" class='add_button' id='add_person_button'>Add</button>
+</td><td>
+<h3 class='input_title'>Add an item:</h3>
+<input type='text' placeholder='Item Name' class='text_field' id='item_name'>
+$<input type='number' min="0.01" step="0.01" max="9999" value="1.00" class='currency_field' id='item_price'>
+<button type="button" class='add_button' id='add_item_button'>Add</button>
+</td></tr></table>
+<hr>
+<table class='filter_table' id='filter_table'>
+<tr class='table_header' id='table_header'>
+<td></td>
+</tr>
+<tr class='price_row' id='price_row'>
+<td></td>
+</tr>
+<tr class='count_row' id='count_row'>
+<td></td>
+</tr>
+<tr class='split_price_row' id='split_price_row'>
+<td></td>
+</tr>
+</table>  
+</body>
+<script type='text/javascript' src='./js/collect_information.js'></script>
+</html>

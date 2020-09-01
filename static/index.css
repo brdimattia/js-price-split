@@ -1,0 +1,16 @@
+
+body {
+	
+	background-color: #e8eef7;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+hr {
+	border-color: #98b6e2;
+}
+
+.filter_table tr:nth-child(even) {background: #CCC}
+.filter_table tr:nth-child(odd) {background: #FFF}
+.filter_table td {padding: 5px;}
